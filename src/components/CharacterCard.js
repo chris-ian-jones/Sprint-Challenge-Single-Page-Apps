@@ -1,19 +1,6 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-// export default function CharacterCard ({ props }) {
-//   return (
-//     <div>
-//       <p>name: {props.name}</p>
-//       <p>status: {props.status}</p>
-//       <p>location: {props.location}</p>
-//       <p>episodes: {props.epsiodes}</p>
-//       <p>image: {props.image}</p>
-//     </div>
-  
-//     )
-// }
-
 const CharacterCard = (props) => (
   
   <Card>
