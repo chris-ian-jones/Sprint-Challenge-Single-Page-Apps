@@ -28,10 +28,8 @@ export default function EpisodeList() {
           name={episode.name}
           episode={episode.episode}
           airDate={episode.air_date}
-          
         />
       )}
     </section>
-    
   );
 }
