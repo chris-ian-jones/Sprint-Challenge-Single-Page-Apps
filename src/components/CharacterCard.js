@@ -15,7 +15,7 @@ const CharacterCard = (props) => (
     </Card.Content>
     <Card.Content extra>
       <a>
-        <Icon name='user' />
+        <Icon name='tv' />
         Epsiodes
       </a>
     </Card.Content>
