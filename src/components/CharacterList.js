@@ -14,7 +14,7 @@ export default function CharacterList() {
         .get("https://rickandmortyapi.com/api/character/")
         .then(response => {
           setData(response.data.results)
-          console.log('axios:', response.data.results)
+          console.log('axios character:', response.data.results)
         })
 
   }, [])

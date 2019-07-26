@@ -14,7 +14,7 @@ export default function LocationsList() {
             .get("https://rickandmortyapi.com/api/location/")
             .then(response => {
               setData(response.data.results)
-              console.log('axios:', response.data.results)
+              console.log('axios loction:', response.data.results)
             })
     
     }, [])
