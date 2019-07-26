@@ -30,6 +30,7 @@ export default function CharacterList() {
         location={character.location.name}
         episodes={character.episodes}
         image={character.image}
+        origin={character.origin.name}
         />
         )}
     </section>
