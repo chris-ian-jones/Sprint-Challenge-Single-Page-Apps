@@ -5,6 +5,7 @@ import AppRouter from './components/AppRouter.js';
 import CharacterList from './components/CharacterList'
 import LocationsList from './components/LocationsList.js';
 import EpisodeList from './components/EpisodeList';
+// import SearchForm from './components/SearchForm'
 
 import { Route } from 'react-router-dom'
 

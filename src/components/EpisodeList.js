@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import EpisodeCard from './EpisodeCard';
 
-export default function EpisodeList() {
+export default function EpisodeList(props) {
   const [data, setData] = useState([])
 
   useEffect(() => {
+    const url = props.match.url;
 
     axios
         .get("https://rickandmortyapi.com/api/episode/")
@@ -14,7 +15,7 @@ export default function EpisodeList() {
           console.log('axios episodes:', response.data.results)
         })
 
-  }, [])
+  }, [props.match.url])
 
   return (
   

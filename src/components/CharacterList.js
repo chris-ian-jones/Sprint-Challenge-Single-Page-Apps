@@ -2,24 +2,24 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import CharacterCard from './CharacterCard';
 
-export default function CharacterList() {
-  const [data, setData] = useState([])
+export default function CharacterList(props) {
+  const [charData, setCharData] = useState([])
 
   useEffect(() => {
+    const url = props.match.url;
 
     axios
         .get("https://rickandmortyapi.com/api/character/")
         .then(response => {
-          setData(response.data.results)
-          console.log('axios character:', response.data.results)
+          setCharData(response.data.results)
+          // console.log('axios character:', response.data.results)
         })
-
-  }, [])
-
+  }, [props.match.url])
+  // console.log('data character:', data)
   return (
   
     <section className='character-list grid-view'>
-      {data.map(character => 
+      {charData.map(character => 
         <CharacterCard 
           key={character.id}
           name={character.name}
@@ -31,6 +31,5 @@ export default function CharacterList() {
         />
       )}
     </section>
-    
   );
 }

@@ -4,8 +4,10 @@ export default function SearchForm({ onSearch }) {
   const [query, setQuery] = useState({
     name: ""
   })
+  console.log(query)
   const handleInputChange = (event) => {
     setQuery({ ...query, name: event.target.value })
+    
   }
 
   return (
