@@ -1,25 +1,22 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-const CharacterCard = (props) => (
+const EpisodeCard = (props) => (
   
   <Card>
-    <Image src={props.image} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{props.name}</Card.Header>
-      <Card.Meta>{props.status}</Card.Meta>
       <Card.Description>
-        Location: {props.location}<br/>
-        Origin: {props.origin}
+       Episode: {props.episode}
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a>
-        <Icon name='tv' />
-        Episodes
+        <Icon name='calendar' />
+        Aired: {props.airDate}
       </a>
     </Card.Content>
   </Card>
 )
 
-export default CharacterCard
+export default EpisodeCard
